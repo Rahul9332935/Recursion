@@ -6,7 +6,8 @@ public class Main {
 //		printNameNTimes("Rahul", 4);
 //		print1ToN(9);
 		int a= sum(10);
-		System.out.println(a);
+		int b= findFactorial(5);
+		System.out.println(b);
 		
 	}
 	public static void printNameNTimes(String name,int n) {
@@ -32,6 +33,12 @@ public class Main {
 		return n+ sum(n-1);
 	}
 	
+	public static int findFactorial(int n) {
+		if(n==0) {
+			return 1;
+		}
+		return n* findFactorial(n-1);
+	}
 	
 	
 }
